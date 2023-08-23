@@ -9,7 +9,6 @@
 
 <script>
 import Cartoon from "@/components/Cartoon.vue";
-
 export default {
   data(){
     return{
@@ -22,6 +21,7 @@ export default {
   },
   components: {
     Cartoon,
+    
   },
 };
 </script>
