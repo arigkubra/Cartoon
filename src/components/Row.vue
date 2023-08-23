@@ -11,15 +11,25 @@
           </div>
         </div>
         <div>
-          <div class="font-bold">Hart Hagerty</div>
-          <div class="text-sm opacity-50">United States</div>
+          <div class="font-bold">{{ person.fname }}</div>
+          
         </div>
       </div>
     </td>
     <td>
-      Zemlak, Daniel and Leannon
+      {{ person.company }}
       <br />
-      <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
+      <span class="badge badge-ghost badge-sm">{{ person.job }}</span>
     </td>
   </tr>
 </template>
+
+
+<script>
+
+export default {
+  components: "Row",
+  props: ['person']
+}
+
+</script>

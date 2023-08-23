@@ -5,7 +5,7 @@
     <div class="overflow-x-auto mx-16 pt-6 pb-24">
       <table class="table">
         <!-- head -->
-        <thead>
+        <thead class="text-white">
           <tr>
             <th>Name</th>
             <th>Job</th>
@@ -13,10 +13,7 @@
           </tr>
         </thead>
         <tbody>
-          <Row />
-          <Row />
-          <Row />
-          <Row />
+          <Row v-for="person in people" :key="person.fname" :person="person" />
         </tbody>
         
       </table>
@@ -26,6 +23,16 @@
 <script>
 import Row from '@/components/Row.vue';
 export default{
+  data(){
+    return{
+      people:[
+        {fname:'Kübra A.', company:'GitLab', job:'Front End Developer' },
+        {fname:'Teslime M.', company:'Apple', job:'Back End Developer' },
+        {fname:'Kübra T.', company:'Microsoft', job:'Full Stack Developer' },
+        {fname:'Merve B.', company:'Huawei', job:'Front End Developer' },
+      ]
+    }
+  },
   components:{
     Row,
   }
