@@ -1,6 +1,6 @@
 <template >
   <div
-    class="flex  justify-center items-center bg-gradient-to-b from-black to-grey ">
+    class="flex justify-center items-center bg-gradient-to-b from-black to-grey ">
     <Cartoon v-for="cart in cartoonItems" :key="cart.title" :cart="cart" />
     
 
