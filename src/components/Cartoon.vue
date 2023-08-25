@@ -32,7 +32,7 @@ export default {
   },
   methods:{
     addFav (){
-      this.isFav = !this.isFav
+      this.isFav = true
     },
     delFav(){
       this.isFav = false
