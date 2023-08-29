@@ -1,6 +1,6 @@
 <template>
   <tr>
-    <td class="px-12">
+    <td class="px-6">
       <div class="flex items-center space-x-3">
         <div class="avatar">
           <div class="mask mask-squircle w-12 h-12">
@@ -19,7 +19,7 @@
     <td>
       {{ person.company }}
       <br />
-      <span class="badge badge-ghost badge-sm">{{ person.job }}</span>
+      <span class="badge-lg sm:badge badge badge-ghost text-xs md:text-base    ">{{ person.job }}</span>
     </td>
   </tr>
 </template>

@@ -10,7 +10,7 @@
     </div>
     <div class="card-body">
       <h2 class="card-title my-2">{{ cart.title }}</h2>
-      <p class="my-3">{{ cart.description }}</p>
+      <p class="my-3 text-xs md:text-md">{{ cart.description }}</p>
       
 
       <buttons class="btn btn-secondary" @click="addFav">Add to favorites</buttons>
